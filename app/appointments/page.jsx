@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 
 export default function AppointmentsPage() {
-  const [date, setDate] = (useState < Date) | (undefined > new Date());
+  const [date, setDate] = useState(new Date());
   const [doctor, setDoctor] = useState("");
   const [service, setService] = useState("");
 
