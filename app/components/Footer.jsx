@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-main text-white">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -18,22 +18,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="hover:text-blue-400">
+                <Link href="/services" className="hover:text-purple-400">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/doctors" className="hover:text-blue-400">
+                <Link href="/doctors" className="hover:text-purple-400">
                   Doctors
                 </Link>
               </li>
               <li>
-                <Link href="/appointments" className="hover:text-blue-400">
+                <Link href="/appointments" className="hover:text-purple-400">
                   Book Appointment
                 </Link>
               </li>
               <li>
-                <Link href="/patient-portal" className="hover:text-blue-400">
+                <Link href="/patient-portal" className="hover:text-purple-400">
                   Patient Portal
                 </Link>
               </li>

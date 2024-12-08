@@ -11,21 +11,25 @@ import {
 export default function Home() {
   return (
     <div className="space-y-12">
-      <section className="text-center">
+      <section className="text-center hero-section">
         <h1 className="text-4xl font-bold mb-4">
           Welcome to Lagos General Hospital
         </h1>
         <p className="text-xl mb-8">
           Providing Quality Healthcare for Over 50 Years
         </p>
-        <Button asChild size="lg">
+        <Button
+          asChild
+          size="lg"
+          className="bg-main text-white border-[1px] border-main hover:bg-white hover:text-main transition-colors duration-200 ease-in justify-center items-center text-center"
+        >
           <Link href="/appointments">Book an Appointment</Link>
         </Button>
       </section>
 
       <section>
         <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
             "Emergency Care",
             "General Medicine",
@@ -34,7 +38,7 @@ export default function Home() {
             "Surgery",
             "Cardiology",
           ].map((service) => (
-            <Card key={service}>
+            <Card key={service} className="rotate-[2deg] bg-main text-white">
               <CardHeader>
                 <CardTitle>{service}</CardTitle>
               </CardHeader>
